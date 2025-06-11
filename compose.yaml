@@ -1,4 +1,4 @@
-version: '3.8'
+
 
 services:
   db:
@@ -19,7 +19,7 @@ services:
     image: adminer
     container_name: adminer_ui
     ports:
-      - "8080:8080"
+      - "9090:8080"
     depends_on:
       - db
     restart: unless-stopped
